@@ -1,0 +1,207 @@
+HTTP/1.1 200 OK
+X-Powered-By: Servlet/3.0
+Expires: 0
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Language: en-US
+Date: Fri, 05 Aug 2016 06:36:56 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Padding: zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+
+Vary: Accept-Encoding
+Content-Length: 6323
+Connection: Keep-Alive
+
+(function() {
+var _webUri = "/files/";
+var _webCommonUri = "/files/nav/common/";
+var _webStaticUri = "\/files\/static\/20160728.131936!en_us\/";
+var _formattingLocaleParam = "en-us";
+_formattingLocaleParam = _formattingLocaleParam.replace("_", "-");
+if(_formattingLocaleParam == "iw")
+   _formattingLocaleParam = "he";
+
+window._lconn_files_config = {
+	language: "en-us",
+	translationLanguage: "en",
+	formattingLanguageParam: _formattingLocaleParam,
+	version: "20160728.131936",
+	releaseVersion: "5.5.0.0",
+	applicationUri: "https://apps.collabservsvt1.swg.usma.ibm.com/files/",
+	applicationUriUnsecure: "https://apps.collabservsvt1.swg.usma.ibm.com/files/",
+	applicationUriSecure: "https://apps.collabservsvt1.swg.usma.ibm.com/files/",
+	baseUri: _webUri,
+	baseCommonUri: _webCommonUri,
+	baseStaticUri: _webStaticUri,
+	isCloudMode: true, 
+   commentMentionsEnabled: true,
+   communityFiles: {
+      filesTab: {
+         defaultSortOrder: "modified"
+      },
+      restrictUserInComm: true
+    },
+	features: {
+      addToSyncInListView: true,
+      compactFolderPicker: true,
+      compactFilePicker: true,
+      communityFolder: true,
+      dragAndDropIndicatorForPersonalFiles: true,
+      preview: true,
+      fileSync: {
+         enabled: true,
+         clientDownloadLinkEnabled:  true,
+         clientDownloadLink: "/downloads/",
+         clientPlatforms: { win: {enabled:true,url:"/downloads/"},mac: {enabled:true,url:"/downloads/"}},
+         displayBluebox: true
+      },
+      roundTripEditing: {
+         extensions: [".ods",".xls",".odt",".pptx",".ppt",".xlsx",".doc",".odp",".docx"]
+      },
+      detailedDownloads: true,
+      encryption: true,
+      ecmFilesEnabled: false,
+      
+		versioning: true,
+		trash: true,
+		communityTrash: true,
+        personalFileSharing: true,
+		preModeration: false,
+		recentUpdates: true,
+		zipDownload: true,
+		following: true,
+		sharingIntent: true,
+		isExternalDefault: true,
+		uploadFileUseFlash: true,
+		resharing: {
+			"enabled": true,
+			"default": false
+		}		
+	},
+	helpUri: "https://apps.collabservsvt1.swg.usma.ibm.com/help/topic/com.ibm.lotus.connections.files.help/{topic}",
+	demoUri: "http://ibmtvdemo.edgesuite.net/software/lotus/uxid/connections/files40/files_demo.html",
+	auth: {
+   
+		className: "com.ibm.ajax.auth",
+
+		standardLogin: false
+	},
+	openFromWeb: {
+   
+	},
+	
+	apiFormService: "/files/form/",
+	apiBasicService: "/files/basic/",
+
+	downloadZipEncodings: [
+		{name: "English and Western European", value: "CP1252"},
+		{name: "Chinese (simplified)", value: "MS936"},
+		{name: "Chinese (traditional)", value: "MS950"},
+		{name: "Japanese", value: "MS932"},
+		{name: "Korean", value: "MS949"},
+		{name: "Polish", value: "CP852"},
+		{name: "Turkish", value: "CP857"},
+		{name: "Greek", value: "CP737"},
+		{name: "Russian", value: "CP1251"},
+		{name: "Thai", value: "MS874"}
+	],
+
+	services: {
+        maxTagFilters: 3,
+		disableAnonymous: true,
+		loginUri: "/files/form/login_redirect",
+		loginPostUri: "https://apps.collabservsvt1.swg.usma.ibm.com/files/j_security_check",
+		logoutUri: "/files/ibm_security_logout?logoutExitPage=%2F",
+		maxFileSize: 2147483648,
+		maxPageSize: 1048576,
+		maxAttachmentSize: 78643200,
+		multiPhaseFileUpload: true,
+		userPhotoUri: _webCommonUri + "styles/images/profileNoPhoto.gif",
+
+		connections: {
+			enabled: {
+         			homepage: true,
+         			profiles: false,
+         			communities: true,
+         			blogs: true,
+         			dogear: false,
+         			activities: true,
+         			files: true,
+         			forums: true,
+         			wikis: true,
+         			search: true,
+         			news: true,
+         			infra: false
+			},
+			uri: {
+				homepage: "https://apps.collabservsvt1.swg.usma.ibm.com/homepage",
+				communities: "https://apps.collabservsvt1.swg.usma.ibm.com/communities",
+				blogs: "https://apps.collabservsvt1.swg.usma.ibm.com/blogs",
+				activities: "https://apps.collabservsvt1.swg.usma.ibm.com/activities",
+				files: "https://apps.collabservsvt1.swg.usma.ibm.com/files",
+				forums: "https://apps.collabservsvt1.swg.usma.ibm.com/forums",
+				wikis: "https://apps.collabservsvt1.swg.usma.ibm.com/wikis",
+				search: "https://apps.collabservsvt1.swg.usma.ibm.com/search",
+				news: "https://apps.collabservsvt1.swg.usma.ibm.com/news"
+			}
+		},
+		externalSearchScopes: [],   
+		peopleSearch: {maxResults: 100}   
+	},
+	actionConfig: {
+	   isActionAllowed: function(objType, user, action){
+	      var actionsControls = {
+		   "00000000-0000-0000-0001-000000000000": {downloadEmptyFile: {
+	               name: "downloadEmptyFile",
+	               enabled: false
+	            },
+download: {
+	               name: "download",
+	               enabled: true
+	            },
+uploadNewVersion: {
+	               name: "uploadNewVersion",
+	               enabled: true
+	            },
+restoreVersion: {
+	               name: "restoreVersion",
+	               enabled: true
+	            }}
+		   };
+		   var actionControl = actionsControls[objType];
+		   if (actionControl && actionControl[action]){
+		      var action = actionControl[action];
+		      if (action){ //if action not defined, we think it always allowed
+		         if (action.enabled){
+		            if (action.roles){//if action doesn't have roles, we think it is allowed to every user
+		               if (user && user.roles){
+		                  var found = false;
+		                  for(var i=0; i<action.roles.length; i++){
+		                     for(var j=0; j<user.roles.length; j++){
+		                        if (action.roles[i] == user.roles[j]) {
+		                           found = true;
+		                           break;
+		                        }
+		                     }
+		                  }
+		                  if (found) 
+		                     return action.mode == "allow";
+		                  else 
+		                     return action.mode == "deny";
+		               }else // if anounymous user or user doesn't have role, we think it's not allowed
+		                  return false;
+		            }else {
+		               return action.mode != "allow"; // If mode is 'allow' but no roles are defined, anyone is rejected.
+		            }
+		         }else 
+		            return false;
+		      }else 
+		         return true;
+        }
+        return true;
+	  }
+	}
+};
+})();
+
+window._lconn_files_config_xslt_list = {};
